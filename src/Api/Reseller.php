@@ -3,6 +3,7 @@
 namespace OwenVoke\UnstoppableDomains\Api;
 
 use OwenVoke\UnstoppableDomains\Api\Reseller\Domain;
+use OwenVoke\UnstoppableDomains\Api\Reseller\Order;
 use OwenVoke\UnstoppableDomains\Api\Reseller\User;
 
 class Reseller extends AbstractApi
@@ -15,6 +16,16 @@ class Reseller extends AbstractApi
     public function domains(): Domain
     {
         return $this->domain();
+    }
+
+    public function order(): Order
+    {
+        return new Order($this->getClient());
+    }
+
+    public function orders(): Order
+    {
+        return $this->order();
     }
 
     public function user(): User
