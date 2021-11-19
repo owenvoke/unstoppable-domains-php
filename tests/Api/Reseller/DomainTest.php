@@ -32,7 +32,7 @@ it('can retrieve an owners domains as a reseller', function () {
                 'registered' => true,
                 // ...
             ],
-        ]
+        ],
     ];
 
     $api = $this->getApiMock();
@@ -44,7 +44,6 @@ it('can retrieve an owners domains as a reseller', function () {
 
     expect($api->all('1234abc', '0x033dc48B5dB4CA62861643e9D2C411D9eb6D1975', 'crypto'))->toBe($expectedArray);
 });
-
 
 it('can retrieve domain variations as a reseller', function () {
     $expectedArray = [
