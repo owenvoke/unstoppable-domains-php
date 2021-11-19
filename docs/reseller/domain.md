@@ -7,7 +7,7 @@ Allows interacting with the Reseller Domain API.
 ### Get details about a domain name
 
 ```php
-$response = $client->reseller()->domain()->get($resellerId, 'domain.crypto');
+$response = $client->reseller()->domain()->show($resellerId, 'domain.crypto');
 ```
 
 ### Get a list of domains with a specific extension for an owner

@@ -11,3 +11,4 @@ $reseller = $client->reseller();
 ```
 
 - [Domain API](domain.md)
+- [User API](user.md)
