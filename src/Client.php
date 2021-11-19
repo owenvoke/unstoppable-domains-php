@@ -10,12 +10,17 @@ use Http\Client\Common\Plugin\HeaderDefaultsPlugin;
 use Http\Client\Common\Plugin\RedirectPlugin;
 use Http\Discovery\Psr17FactoryDiscovery;
 use OwenVoke\UnstoppableDomains\Api\AbstractApi;
+use OwenVoke\UnstoppableDomains\Api\Reseller;
 use OwenVoke\UnstoppableDomains\Exception\BadMethodCallException;
 use OwenVoke\UnstoppableDomains\Exception\InvalidArgumentException;
 use OwenVoke\UnstoppableDomains\HttpClient\Builder;
 use OwenVoke\UnstoppableDomains\HttpClient\Plugin\Authentication;
 use Psr\Http\Client\ClientInterface;
 
+/**
+ * @method Reseller reseller(string $resellerId)
+ * @method Reseller resellers(string $resellerId)
+ */
 final class Client
 {
     public const AUTH_ACCESS_TOKEN = 'access_token_header';
@@ -46,6 +51,10 @@ final class Client
     public function api(string $name): AbstractApi
     {
         switch ($name) {
+            case 'reseller':
+            case 'resellers':
+                return new Reseller($this);
+
             default:
                 throw new InvalidArgumentException(sprintf('Undefined api instance called: "%s"', $name));
         }
