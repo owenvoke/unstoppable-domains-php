@@ -6,6 +6,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com), and this 
 
 ## Unreleased
 
+## [v1.1.1 - 2021-12-03](https://github.com/owenvoke/unstoppable-domains-php/compare/v1.1.0...v1.1.1)
+
+### Fixed
+- Fix the `Domain` API ([799d7e7](https://github.com/owenvoke/unstoppable-domains-php/commit/799d7e73efb4f52f9e2f8382c0e70af983ed9616))
+
 ## [v1.1.0 - 2021-12-03](https://github.com/owenvoke/unstoppable-domains-php/compare/v1.0.0...v1.1.0)
 
 ### Added
