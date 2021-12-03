@@ -95,7 +95,7 @@ Read more about Treeware at [treeware.earth][link-treeware].
 [ico-downloads]: https://img.shields.io/packagist/dt/owenvoke/unstoppable-domains.svg?style=flat-square
 [ico-treeware-gifting]: https://img.shields.io/badge/Treeware-%F0%9F%8C%B3-lightgreen?style=flat-square
 
-[link-unstoppable-domains]: https://unstoppable-domains.xyz
+[link-unstoppable-domains]: https://unstoppabledomains.com
 [link-packagist]: https://packagist.org/packages/owenvoke/unstoppable-domains
 [link-github-actions]: https://github.com/owenvoke/unstoppable-domains-php/actions
 [link-styleci]: https://styleci.io/repos/429396360
