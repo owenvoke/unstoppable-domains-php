@@ -38,7 +38,7 @@ See the [`docs` directory](docs/) for more detailed documentation.
 require_once __DIR__ . '/vendor/autoload.php';
 
 $client = new \OwenVoke\UnstoppableDomains\Client();
-$domain = $client->reseller()->domains()->show($resellerId, 'domain.crypto');
+$domain = $client->domain()->show('domain.crypto');
 ```
 
 **Authentication**
